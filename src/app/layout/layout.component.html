@@ -14,8 +14,4 @@
 
 <hr/>
 
-<ul>
-  <li *ngFor="let fruit of fruits">
-    {{fruit}}
-  </li>
-</ul>
+<app-child [data]="fruits"></app-child>

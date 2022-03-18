@@ -1,1 +1,21 @@
-<p>layout works!</p>
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div class="form-group mb-2">
+      <label>Fruit:</label>
+      <input #newFruit type="text" class="form-control" />
+    </div>
+    <div class="form-group">
+      <button (click)="addFruit(newFruit)" class="btn btn-success">
+        Add Fruit
+      </button>
+    </div>
+  </div>
+</div>
+
+<hr/>
+
+<ul>
+  <li *ngFor="let fruit of fruits">
+    {{fruit}}
+  </li>
+</ul>

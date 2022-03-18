@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
+  fruits = ['Mango', 'Orange', 'Banana'];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addFruit(el: any): void {
+    this.fruits.push(el.value);
+    el.value = '';
   }
 
 }
